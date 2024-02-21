@@ -1,0 +1,207 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "elegant"
+  },
+  "basics": {
+    "name": "Bryan Dady",
+    "label": "Engineering Manager at Subsplash",
+    "image": "https://www.gravatar.com/avatar/f49e646f9aeec1fee497fd90d81aeb81?s=300",
+    "url": "https://about.me/bryandady",
+    "summary": "Executive level thinker with business project perspective and technical expertise delivering IT solutions through planning, deployment, integration, and automation. Experienced in strategic planning, budgeting, resource management, and process optimization. I enjoy continual learning about cloud, Agile, Lean, DevOps, API, and related innovations. I adapt to new circumstances quickly, focusing myself and others to deliver value efficiently.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "bryandady",
+        "url": "https://www.linkedin.com/in/bryandady/"
+      },
+      {
+        "network": "Twitter",
+        "username": "bcdady",
+        "url": "https://twitter.com/bcdady"
+      },
+      {
+        "network": "GitHub",
+        "username": "bcdady",
+        "url": "https://github.com/bcdady"
+      },
+      {
+        "network": "GitLab",
+        "username": "bcdady",
+        "url": "https://gitlab.com/bcdady"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Subsplash ®",
+      "position": "SRE Manager",
+      "startDate": "2019-11-30",
+      "highlights": [
+        "Grew Site Reliability Engineering team from 2 to 6, integrating SRE in products/scrum teams",
+        "Acquired, merged, and updated AWS Accounts and Organizations",
+        "Replaced hand built infrastructure environments with IaC managed in Terraform CI/CD",
+        "Improved security awareness and vigilance, adding security scanning into CI templates"
+      ],
+      "url": "https://www.linkedin.com/company/subsplash/",
+      "location": "Missoula, MT, United States"
+    },
+    {
+      "name": "Glacier Bancorp, Inc.",
+      "position": "Director, IT Infrastructure",
+      "startDate": "2014-03-31",
+      "endDate": "2019-11-30",
+      "highlights": [],
+      "summary": "I get to lead the IT Infrastructure team for a regional bank, providing centralized data center services to our 13+ bank brand division across 6 states.",
+      "url": "https://www.linkedin.com/company/glacier-bancorp-inc/",
+      "location": "Missoula, Montana"
+    },
+    {
+      "name": "T-Mobile",
+      "position": "Manager, Platform Design",
+      "startDate": "2012-12-31",
+      "endDate": "2014-03-31",
+      "highlights": [],
+      "summary": "Lead IT standards and reference architecture team to enable private and hybrid cloud solutions design and delivery.\n\n\nI get to lead a world class cloud platform design team to ensure we're providing the best available technology platforms, We stay current with industry trends and best practices and transcribe the right innovations into strategic roadmaps.\n\n\nWe partner with projects, applications, build, automation, and operations teams to keep our reference architectures aligned with what our customers need to be efficient and effective.",
+      "url": "https://www.linkedin.com/company/t-mobile/",
+      "location": "Bothell, WA, United States"
+    },
+    {
+      "name": "Denali Advanced Integration",
+      "position": "Sr. Solutions Architect",
+      "startDate": "2011-06-30",
+      "endDate": "2012-12-31",
+      "highlights": [],
+      "summary": "Responsible for design and delivery of comprehensive systems and service management \nsolutions for customers with a wide range of platforms, client types and infrastructures.\nTechnical leadership guiding multiple resources to achieve high value solutions on\nconcurrent projects. \n* Transform ITSM capabilities for 2000 client / 500 server multi-site customer, from myriad single purpose tools\nto efficient Microsoft System Center solution . \n* Lead System Center implementation and optimization projects from process review\nand requirements gathering through solution design, deployment, and go-live. \n* Integrate Service Manager with Opalis (Orchestrator), Operations Manager, and\nConfiguration Manager to maximize value from process integration and automation \n* Project initiation, resource management, scheduling, budgeting, and reporting\n* Create and maintain solution documentation including and support and training\n* Collaborate with IT staff to smoothly transition tactical operations and support\nprocesses to steady-state and continuous improvement",
+      "url": "https://www.linkedin.com/company/denaliadvancedintegration/",
+      "location": "Redmond, WA"
+    },
+    {
+      "name": "Russell Investments",
+      "position": "IT Service Manager",
+      "startDate": "2009-11-30",
+      "endDate": "2011-06-30",
+      "highlights": [],
+      "summary": "Strategy and tactical leadership of ITIL aligned service asset and configuration management (SACM), and event management practices for global financial services firm through a season of substantial technology and organizational change.\n• Optimized IT event management services by expanding from basic Windows-server-only function to comprehensive availability and capacity management solution\n• Integrated Microsoft, BMC, NetApp, and Splunk systems for improved visibility and business intelligence of critical B-to-B exchange infrsatructure\n• Expanded ITIL adoption and improved internal customer experience through partnership and collaboration with new Incident and Problem process owners \n• Initiated data driven budgeting, capacity measurement, and planning through tools automation and close collaboration with product and service managers\n• Deployed network scanning solution for automated discovery and management of infrastructure asset and configuration inventory\n• Evolved ITSM/CMDB maturity to provide automated application and service models;",
+      "url": "https://www.linkedin.com/company/russell-investments/"
+    },
+    {
+      "name": "JP Morgan Chase",
+      "position": "Solutions Architect",
+      "startDate": "2008-09-30",
+      "endDate": "2009-06-30",
+      "highlights": [],
+      "summary": "Drive and develop integration of WaMu enterprise monitoring systems and services into JP Morgan Chase global monitoring infrastructure, while maintaining service levels with reduced resources.\nMigrate Unicenter (Windows) based event management/brokerage policies and processes to Netcool (UNIX) platform.\nSupport historical performance data migration by developing ETL scripts to convert three-dimensional data cube extracts to two dimensional CSV files.",
+      "url": "https://www.linkedin.com/company/jpmorganchase/"
+    },
+    {
+      "name": "Washington Mutual",
+      "position": "Solutions Architect, Technical Integration Lead",
+      "startDate": "2007-09-30",
+      "endDate": "2009-06-30",
+      "highlights": [],
+      "summary": "Key Responsibilities include:\nLead Enterprise Systems Monitoring event management integration. Coordinated standards and changes with technical service providers and vendors.\nGather requirements and deliver solutions aligned with monitoring platform refresh.\nProactively work with external service providers to integrate event management across various platforms and environments.",
+      "url": "https://www.linkedin.com/company/jpmorganchase/"
+    },
+    {
+      "name": "Washington Mutual",
+      "position": "Infrastructure Specialist Lead",
+      "startDate": "2006-04-30",
+      "endDate": "2007-09-30",
+      "highlights": [],
+      "summary": "Problem Management and Root Cause Analysis of technology incidents\nCoordinate investigation, leverage best practice methodologies to determine root cause\nDocument lessons learned and opportunities for improvement to mitigate future incidents and risks\nContinual Process Improvements to respond to Major Incidents more quickly and efficiently as well as improve Problem Management and Root Cause Analysis processes and procedures",
+      "url": "https://www.linkedin.com/company/jpmorganchase/"
+    },
+    {
+      "name": "Washington Mutual",
+      "position": "Technical Specialist, Sr.",
+      "startDate": "2002-06-30",
+      "endDate": "2006-04-30",
+      "highlights": [],
+      "summary": "From June 2002 until June 2003, I performed as a software delivery team member, specializing in packaging and customizing Windows based applications for delivery and management with Marimba products (now a part of BMC). In June of 2003 I began my transition to team leadership where I introduced InstallShield packaging and customization tools (now a part of Macrovision), along with process refinements to improve effiecency. Through 2004 I worked closely with our platform team to expand patch management and software delivery to our AIX, HP-UX and Solaris environments. 2005 introduced increasing motivation for our department to consider outsourcing and so I sucessfully completed a proof-of-concept exercise to evaluate two off-shore service providers. I selected the best provider and they now produce the majority of packaging and testing services for our team.",
+      "url": "https://www.linkedin.com/company/jpmorganchase/"
+    },
+    {
+      "name": "IBM Global Services",
+      "position": "Systems Admin; software delivery",
+      "startDate": "2001-01-31",
+      "endDate": "2002-06-30",
+      "highlights": [],
+      "summary": "Operate 12+ AIX systems delivering custom software to thousands of OS/2 servers with Tivoli. Recruited for short-term project and then asked to stay on for continued support. Began expanding to deliver wintel software on Windows systems with Marimba delivery/management products. This opened the opportunity to transition to Washington Mutual staff.",
+      "url": "https://www.linkedin.com/company/ibm/"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "area": "Communications",
+      "studyType": "Bachelor of Arts",
+      "startDate": "2006-12-31",
+      "endDate": "2008-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "interests": [
+    {
+      "name": "Personal development: Strengths Finder, Eneagram"
+    },
+    {
+      "name": "Music / drumming"
+    },
+    {
+      "name": "Fly fishing"
+    },
+    {
+      "name": "Trauma-informed child care and parenting: https://child.tcu.edu/"
+    }
+  ],
+  "references": [
+    {
+      "name": "Chris Pysden",
+      "reference": "I collaborated with Bryan on an enterprise wide system and application monitoring project in a complex multi-platform environment.  Bryan has a rare mix of technical competence, great communication skills, and the ability to balance project and business priorities to ensure successful outcomes"
+    },
+    {
+      "name": "Peter Roach",
+      "reference": "I worked closely with Bryan rolling out real-time monitoring across a diverse global electronic messaging landscape.  Bryan's guidance and assistance with this project kept the project on-time and in the end exceeded senior leader's expectations.\r\n\r\nBryan is a joy to work with and he brings a fresh and very detailed perspective to any meeting table!  Further, Bryan's leadership is often requested to bring about significant proactive change the enterprise computing space."
+    },
+    {
+      "name": "Larry Youngquist",
+      "reference": "As a senior technical architect and the team lead for WaMu Enterprise Monitoring, I worked closely with Bryan and found him to be not only a highly technically competent and consummate professional, but also a genuine individual and a pleasure to work with.   \r\n\r\nHis communication skills and customer-focused manner have added a tremendous value to our group.  As we faced an extremely challenging and constantly changing environment, Bryan is quick to adapt and constantly demonstrates an ability to quickly develop solutions to complex problems.  And most importantly, he then strives diligently on working through the issues to final resolution.   All while keeping a good humor and an excellent relationship with all of his co-workers.\r\n\r\nI valued Bryan’s contribution and always appreciated the skills and competence that he brought to the table.   Equally valuable as his technical skills. are the polished communication skills that allowed him to be highly productive and efficient.   Bryan exemplified the combination of a highly skilled, thoughtful and personable team contributor."
+    },
+    {
+      "name": "Jim Wilson",
+      "reference": "Bryan was great to work with as a customer and had a strong handle on his team and how to achieve his goals."
+    },
+    {
+      "name": "Robert Topper",
+      "reference": "Bryan was a great person to work for.  Having just come from \"the trenches\" he was always tentative to the peoples needs.  As a technician, he was always striving for more innovative ways to perform tasks and get the job done."
+    },
+    {
+      "name": "John Nardello",
+      "reference": "I worked with Bryan for several months on packaging up our backup software for Enterprise-wide deployment. Bryan was quite patient with my questions about the whole process and unfailingly polite and helpful. He was great to work with and the production release went off without any problems. A good guy to have on your team for any project."
+    },
+    {
+      "name": "Shawn Fuller",
+      "reference": "Bryan was one of the leading knowledge experts in his group.  I could always go to him for answers I could trust and we often collaborated on ideas and technical solutions."
+    },
+    {
+      "name": "Ray Salas",
+      "reference": "Bryan is a strong leader that has a great balance of technical tactical ability as well as strategic leadership ability.  He is a great resource to have because he can play many roles."
+    }
+  ],
+  "projects": [
+    {
+      "name": "My PowerShell modules",
+      "startDate": "2013-11-30",
+      "summary": "Some of my PowerShell modules are featured on this page, as well as being available from the PowerShell Gallery.\nhttps://www.powershellgallery.com/profiles/bcdady/",
+      "url": "https://bcdady.github.io/"
+    }
+  ]
+}

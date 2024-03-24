@@ -58,7 +58,7 @@ const config: Config = {
       logo: {
         // Thank you https://www.vecteezy.com/
         alt: "Laptop with code on screen",
-        src: "img/laptop.jpg",
+        src: "img/laptop.webp",
       },
       items: [
         {

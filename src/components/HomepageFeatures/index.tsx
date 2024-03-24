@@ -4,24 +4,25 @@ import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
+  Img: React.ComponentType<React.ComponentProps<"img">>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    title: "Tech work is a hobby as well as a profession.",
+    Img: require("@site/static/img/laptop-2.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I enjoy learning and trying new things. Earlier in my career this looked
+        like learning languages like Perl and RegEx. More recently it has
+        included JAMstack and TypeScript.
       </>
     ),
   },
   {
     title: "Hi, My name is Bryan",
-    Svg: require("@site/static/img/laptop-2.svg").default,
+    Img: require("@site/static/img/bryan-portrait-sm.webp").default,
     description: (
       <>
         Welcome to my new site. I built this new web site using Docusaurus, and
@@ -32,22 +33,23 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "I also love to be outdoors.",
+    Img: require("@site/static/img/IMG_3338.webp").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I'm glad to live in a particularly naturally beautiful part of our
+        world. I enjoy biking, fishing, and skiing or snowboarding in the
+        winter.
       </>
     ),
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, Img, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

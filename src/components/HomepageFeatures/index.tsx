@@ -11,12 +11,13 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Tech work is a hobby as well as a profession.",
-    Img: require("@site/static/img/laptop-2.svg").default,
+    Img: require("@site/static/img/laptop.webp").default,
     description: (
       <>
-        I enjoy learning and trying new things. Earlier in my career this looked
-        like learning languages like Perl and RegEx. More recently it has
-        included JAMstack and TypeScript.
+        I enjoy learning and trying new things. Earlier in my career this
+        included learning languages like Perl and RegEx and building with VMWare
+        and SAN. More recently I am enjoying learning Terraform and various use
+        cases for YAML, as well as JAMstack and TypeScript.
       </>
     ),
   },
@@ -25,10 +26,13 @@ const FeatureList: FeatureItem[] = [
     Img: require("@site/static/img/bryan-portrait-sm.webp").default,
     description: (
       <>
-        Welcome to my new site. I built this new web site using Docusaurus, and
-        hosting at CloudFlare. I've done plenty of AWS and Azure cloud and
-        systems level development, and now I&apos;m challenging myself to learn
-        some new skills.
+        Welcome to my new site. I built this simple collection of pages using{" "}
+        <a href="https://docusaurus.io/" target="_blank">
+          Docusaurus
+        </a>{" "}
+        and <a href="https://pages.cloudflare.com">Cloudflare Pages</a>. I've
+        done plenty of AWS and Azure cloud and systems level development, and
+        now I&apos;m challenging myself to learn some new skills.
       </>
     ),
   },
@@ -49,7 +53,12 @@ function Feature({ title, Img, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img className={styles.featureSvg} role="img" />
+        <img
+          className={styles.featureImage}
+          role="img"
+          src={Img.toString()}
+          height="300"
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

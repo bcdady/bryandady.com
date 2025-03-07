@@ -12,6 +12,7 @@ I first fell in love with IT by investigating the PC my dad ran his small busine
 
 ## See also
 
+- [github.com/bcdady](https://github.com/bcdady)
 - [about.me/bryandady](https://about.me/bryandady)
 - [linkedin.com/in/bryandady](https://linkedin.com/in/bryandady)
-- [github.com/bcdady](https://github.com/bcdady?tab=repositories)
+- [bcdady.bsky.social](https://bsky.app/profile/bcdady.bsky.social)

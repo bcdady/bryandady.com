@@ -107,9 +107,9 @@ const config: Config = {
               href: "https://threads.net/@bcdady",
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/bcdady",
-            },
+              label: "BlueSky",
+              href: "https://bsky.app/profile/bcdady.bsky.social"
+            }
           ],
         },
         {

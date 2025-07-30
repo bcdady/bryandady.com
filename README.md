@@ -36,3 +36,41 @@ This command generates static content into the `build` directory and can be serv
 ### Deployment
 
 I've integrated deployment from this GitHub repository to my account in Cloudflare.
+
+For safe production deployment:
+
+```shell
+npm run deploy:safe
+```
+
+This command verifies the build excludes development dependencies and is ready for production.
+
+## Security
+
+### webpack-dev-server Vulnerability Handling
+
+This project may show webpack-dev-server security warnings during `npm audit`. These are **not security risks for the deployed site** because:
+
+- **Development only**: webpack-dev-server is only used during `npm start` and build processes
+- **Not deployed**: The production build contains only static HTML/CSS/JS files
+- **Verified exclusion**: Automated checks ensure no webpack-dev-server code reaches production
+
+#### Verification
+
+To verify webpack-dev-server is excluded from production builds:
+
+```shell
+npm run verify:no-webpack-dev-server
+```
+
+Or run the complete safety check:
+
+```shell
+npm run deploy:safe
+```
+
+#### Why This Approach
+
+The vulnerabilities (GHSA-9jgg-88mc-972h, GHSA-4v9v-hfq4-rm2v) affect the development server, not static site deployments. Since this is a JAMstack site deployed as static files, these vulnerabilities don't impact the production environment.
+
+For detailed security information, see [SECURITY.md](SECURITY.md).

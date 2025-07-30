@@ -85,6 +85,10 @@ const config: Config = {
               label: "Hello",
               to: "/docs/intro",
             },
+            {
+              label: "Résumé",
+              to: "/resume",
+            },
           ],
         },
         {
@@ -120,13 +124,17 @@ const config: Config = {
               to: "/blog",
             },
             {
+              label: "About Me",
+              to: "https://about.me/bryandady",
+            },
+            {
               label: "GitHub",
               href: "https://github.com/bcdady",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Bryan Dady. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Bryan Dady. Built with <a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus</a>.`,
     },
     prism: {
       theme: prismThemes.github,

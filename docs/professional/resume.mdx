@@ -1,0 +1,45 @@
+---
+title: Professional Resume
+description: Bryan Dady's professional resume and career history
+sidebar_position: 1
+---
+
+import { ResumeRenderer, ResumeMetadata } from '@site/src/components/Resume';
+import resumeData from './Bryan_Dady.resume.json';
+import resumeMetadata from '@site/src/data/resume-metadata.json';
+
+# Professional Resume
+
+This page presents my professional resume in a structured, web-friendly format. The resume is maintained as a JSON document following the [JSON Resume Schema](https://jsonresume.org/), which allows for consistent formatting and easy updates.
+
+<ResumeRenderer resumeData={resumeData} />
+
+<ResumeMetadata metadata={resumeMetadata} variant="detailed" />
+
+---
+
+## About This Resume Format
+
+This resume is automatically rendered from structured JSON data, which provides several advantages:
+
+- **Consistency**: Follows industry-standard JSON Resume Schema
+- **Maintainability**: Single source of truth for resume data
+- **Portability**: Can be easily converted to other formats (PDF, HTML, etc.)
+- **Version Control**: Changes are tracked in git with full history
+- **Automation**: Can be automatically updated and deployed
+
+### Technical Implementation
+
+The resume is rendered using a custom React component built for Docusaurus, with:
+- Responsive design that works on desktop and mobile
+- Print-friendly CSS for generating PDFs
+- Semantic HTML structure for accessibility
+- Professional styling with modern typography
+
+### Data Source
+
+The underlying resume data is stored in [`Bryan_Dady.resume.json`](./Bryan_Dady.resume.json) and follows the [JSON Resume Schema v1.0.0](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json).
+
+---
+
+<ResumeMetadata metadata={resumeMetadata} variant="compact" /> | [View JSON Source](./Bryan_Dady.resume.json)

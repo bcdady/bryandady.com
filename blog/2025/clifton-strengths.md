@@ -2,6 +2,8 @@
 
 I first encountered Strength oriented personality and proficiency assessment, referred to at the time as StrengthsFinder, in 2011. I was pretty busy at the time, with 2 children under 2 years old and a full-time job (with a pretty long commute). I don't recall the details clearly, but I think my first access to the book was a second-hand copy. I purchased another copy of the StrengthsFinder 2.0 book, in 2015, so I could get my own access code to their online tools at [www.strengthsfinder.com](https://www.strengthsfinder.com).
 
+<!-- truncate -->
+
 [CliftonStrengths](https://en.wikipedia.org/wiki/CliftonStrengths) (previously referred to as StrengthsFinder) is a professional assessment system that helps individuals identify their unique strengths and talents. It is based on the theory of positive psychology and is designed to help people achieve their full potential. The assessment is based on the idea that everyone has a set of innate talents and strengths that can be developed and used to achieve success in various areas of life.
 
 > The Clifton StrengthsFinder assessment was created under the leadership of educational psychologist Donald Clifton. He wanted to identify the skills of the best of the best of the best, and to capitalize on them. Thus the StrengthsFinder assessment, a revolutionary tool for measuring talents, was first introduced to the world

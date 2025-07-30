@@ -28,7 +28,10 @@
     "deploy:verify": "npm run typecheck && npm run build && npm run verify:no-webpack-dev-server && echo 'Deployment verification complete: webpack-dev-server excluded from production build'",
     "deploy:safe": "echo 'Starting safe deployment process...' && npm run deploy:verify && echo 'Ready for production deployment - webpack-dev-server vulnerabilities do not affect deployed site'",
     "resume:validate": "node -e \"const fs = require('fs'); const data = JSON.parse(fs.readFileSync('docs/professional/Bryan_Dady.resume.json', 'utf8')); console.log('Resume JSON is valid:', data.basics.name); console.log('Schema version:', data.meta?.version || 'unknown');\"",
-    "resume:check": "npm run resume:validate && echo 'Resume validation complete'"
+    "resume:check": "npm run resume:validate && echo 'Resume validation complete'",
+    "resume:meta": "node scripts/generate-resume-meta.js",
+    "prebuild": "npm run resume:meta",
+    "predeploy": "npm run resume:meta"
   },
   "dependencies": {
     "@docusaurus/core": "^3.6.3",

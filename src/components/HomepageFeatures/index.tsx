@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Img: React.ComponentType<React.ComponentProps<"img">>;
+  Img: any; // Using any for image import compatibility
   description: React.JSX.Element;
 };
 
@@ -56,8 +56,9 @@ function Feature({ title, Img, description }: FeatureItem) {
         <img
           className={styles.featureImage}
           role="img"
-          src={Img.toString()}
+          src={typeof Img === 'string' ? Img : Img.src || Img}
           height="300"
+          alt={title}
         />
       </div>
       <div className="text--center padding-horiz--md">

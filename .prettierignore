@@ -1,0 +1,34 @@
+# Build outputs
+build/
+dist/
+.docusaurus/
+
+# Dependencies
+node_modules/
+.yarn/
+.pnp.*
+
+# Cache
+.cache/
+.eslintcache
+
+# Misc
+coverage/
+*.min.js
+*.bundle.js
+
+# Generated files
+package-lock.json
+yarn.lock
+.pnp.cjs
+.pnp.loader.mjs
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db

@@ -40,7 +40,7 @@ I've integrated deployment from this GitHub repository to my account in Cloudfla
 For safe production deployment:
 
 ```shell
-npm run deploy:safe
+yarn deploy:safe
 ```
 
 This command verifies the build excludes development dependencies and is ready for production.
@@ -51,7 +51,7 @@ This command verifies the build excludes development dependencies and is ready f
 
 This project may show webpack-dev-server security warnings during `npm audit`. These are **not security risks for the deployed site** because:
 
-- **Development only**: webpack-dev-server is only used during `npm start` and build processes
+- **Development only**: webpack-dev-server is only used during `yarn start` and build processes
 - **Not deployed**: The production build contains only static HTML/CSS/JS files
 - **Verified exclusion**: Automated checks ensure no webpack-dev-server code reaches production
 
@@ -60,13 +60,13 @@ This project may show webpack-dev-server security warnings during `npm audit`. T
 To verify webpack-dev-server is excluded from production builds:
 
 ```shell
-npm run verify:no-webpack-dev-server
+yarn verify:no-webpack-dev-server
 ```
 
 Or run the complete safety check:
 
 ```shell
-npm run deploy:safe
+yarn deploy:safe
 ```
 
 #### Why This Approach

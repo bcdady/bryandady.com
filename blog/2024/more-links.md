@@ -12,3 +12,5 @@ For my other online links, see:
 [linkedin.com/in/bryandady](https://www.linkedin.com/in/bryandady)
 
 [about.me/bryandady](https://about.me/bryandady)
+
+<!-- truncate -->

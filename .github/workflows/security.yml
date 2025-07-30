@@ -15,15 +15,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-          cache: 'npm'
+          cache: 'yarn'
       
       # Install dependencies for build and security checks
-      - run: npm ci
+      - run: yarn install --immutable
 
       # Run comprehensive security and deployment verification
       # This includes: typecheck, build, and verification that webpack-dev-server
       # is excluded from production output (addressing GHSA-9jgg-88mc-972h, GHSA-4v9v-hfq4-rm2v)
-      - run: npm run deploy:safe
+      - run: yarn deploy:safe
 
       # Check for outdated dependencies (non-blocking)
-      - run: npm outdated || true
+      - run: yarn outdated || true

@@ -17,8 +17,13 @@ jobs:
           node-version: 'lts/*'
           cache: 'npm'
       
+      # Install dependencies for build and security checks
       - run: npm ci
-      - run: npm audit --audit-level=moderate
+
+      # Run comprehensive security and deployment verification
+      # This includes: typecheck, build, and verification that webpack-dev-server
+      # is excluded from production output (addressing GHSA-9jgg-88mc-972h, GHSA-4v9v-hfq4-rm2v)
+      - run: npm run deploy:safe
+
+      # Check for outdated dependencies (non-blocking)
       - run: npm outdated || true
-      - run: npm run typecheck
-      - run: npm run build

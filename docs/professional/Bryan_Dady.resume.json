@@ -197,6 +197,12 @@
       "startDate": "2013-11-30",
       "summary": "Some of my earliest projects on GitHub are PowerShell modules. Here they are, as presented in my early-draft GitHub page",
       "url": "https://bcdady-github-io.pages.dev/"
+    },
+    {
+      "name": "My GitHub projects",
+      "startDate": "2013-11-30",
+      "summary": "Over time, I've expanded to include various other languages and technologies in my projects.",
+      "url": "https://bryandady.com/docs/projects/"
     }
   ]
 }

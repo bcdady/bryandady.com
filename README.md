@@ -49,7 +49,7 @@ This command verifies the build excludes development dependencies and is ready f
 
 ### webpack-dev-server Vulnerability Handling
 
-This project may show webpack-dev-server security warnings during `npm audit`. These are **not security risks for the deployed site** because:
+This project may show webpack-dev-server security warnings during `yarn audit` (or `npm audit`). These are **not security risks for the deployed site** because:
 
 - **Development only**: webpack-dev-server is only used during `yarn start` and build processes
 - **Not deployed**: The production build contains only static HTML/CSS/JS files

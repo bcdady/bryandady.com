@@ -9,8 +9,8 @@
     "name": "Bryan Dady",
     "label": "Engineering Manager at Subsplash",
     "image": "https://www.gravatar.com/avatar/f49e646f9aeec1fee497fd90d81aeb81?s=300",
-    "url": "https://about.me/bryandady",
-    "summary": "Executive level thinker with business project perspective and technical expertise delivering IT solutions through planning, deployment, integration, and automation. Experienced in strategic planning, budgeting, resource management, and process optimization. I enjoy continual learning about cloud, Agile, Lean, DevOps, API, and related innovations. I adapt to new circumstances quickly, focusing myself and others to deliver value efficiently.",
+    "url": "https://bryandady.com",
+    "summary": "Executive level thinker with business project perspective and technical expertise delivering IT solutions through planning, deployment, integration, and automation. Experienced in strategic planning, budgeting, resource management, and process optimization. I enjoy continual learning about cloud, Agile, Lean, DevOps, AI, and related innovations. I adapt to new circumstances quickly, focusing myself and others to deliver value efficiently.",
     "location": {
       "countryCode": "US",
       "address": "United States"
@@ -36,14 +36,15 @@
   "work": [
     {
       "name": "Subsplash ®",
-      "position": "SRE Manager",
-      "startDate": "2019-11-30",
+      "position": "Sr. Engineering Manager, Site Reliability Engineering (SRE)",
+      "startDate": "2019-11-11",
       "highlights": [
-        "Grew Site Reliability Engineering team from 2 to 6, integrating SRE in products/scrum teams",
-        "Acquired, merged, and updated AWS Accounts and Organizations",
-        "Replaced hand built infrastructure environments with IaC managed in Terraform CI/CD",
-        "Improved security awareness and vigilance, adding security scanning into CI templates"
+        "Led significant growth in AWS services while overseeing the closure of colo facilities and Rackspace accounts",
+        "Grew and integrated the Site Reliability Engineering team into product and scrum teams",
+        "Built the Data Engineering practice and team within the organization",
+        "Drove the migration of hand-built cloud resources to Terraform Infrastructure as Code"
       ],
+      "summary": "Played a key role in Subsplash's transformation from a Seattle-centric organization to a fully remote company, facilitating rapid growth and ensuring operational scalability. This included acquiring, merging, and updating AWS Accounts and Organizations from partner/reseller-led to direct AWS management. Additionally, directly supported and improved security practices, including PCI maturity, by implementing continual security architecture enhancements.",
       "url": "https://www.linkedin.com/company/subsplash/",
       "location": "Missoula, MT, United States"
     },
@@ -195,8 +196,14 @@
     {
       "name": "My PowerShell modules",
       "startDate": "2013-11-30",
-      "summary": "Some of my PowerShell modules are featured on this page, as well as being available from the PowerShell Gallery.\nhttps://www.powershellgallery.com/profiles/bcdady/",
-      "url": "https://bcdady.github.io/"
+      "summary": "Some of my earliest projects on GitHub are PowerShell modules. Here they are, as presented in my early-draft GitHub page",
+      "url": "https://bcdady-github-io.pages.dev/"
+    },
+    {
+      "name": "My GitHub projects",
+      "startDate": "2013-11-30",
+      "summary": "Over time, I've expanded to include various other languages and technologies in my projects.",
+      "url": "https://bryandady.com/docs/projects/"
     }
   ]
 }

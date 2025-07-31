@@ -5,7 +5,7 @@ Terraform module for managing DNS zones hosted by Cloudflare.
 ## Technologies
 
 - [HCL (Terraform)](https://terraform.io)
-- [Cloudflare Provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest)
+  - [Cloudflare Provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest)
 
 ## License
 

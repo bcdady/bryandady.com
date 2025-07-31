@@ -23,25 +23,33 @@
 
 > Apply the same strategies to make the most of your next five CliftonStrengths. You will excel and become the absolute best version of yourself when you take a strengths-based approach to your life. Do more of what you do best, and you’ll feel more engaged, empowered and energized.
 
-## My Top 5 Strengths
-1. Learner
+## My Top 5 Strength Themes
+
+1. [Learner](https://www.gallup.com/cliftonstrengths/en/252293/learner-theme.aspx)
+   - Strategic Thinking domain
    - I have a great desire to learn and want to continuously improve. The process of learning, rather than the outcome, excites me.
-2. Achiever
+2. [Achiever](https://www.gallup.com/cliftonstrengths/en/252134/achiever-theme.aspx)
+   - Executing domain
    - I work hard and possess a great deal of stamina. I take immense satisfaction in being busy and productive.
-3. Ideation
+3. [Ideation](https://www.gallup.com/cliftonstrengths/en/252260/ideation-theme.aspx)
+   - Strategic Thinking domain
    - I am fascinated by ideas. I am able to find connections between seemingly disparate
    issues or concepts.
-4. Analytical
+4. [Analytical](https://www.gallup.com/cliftonstrengths/en/252152/analytical-theme.aspx)
+   - Strategic Thinking domain
    - I search for reasons and causes. I have the ability to think about all of the factors that might affect a situation.
-5. Relator
-    - I enjoy close relationships with others. I find deep satisfaction in working hard with friends to achieve a goal.
+5. [Relator](https://www.gallup.com/cliftonstrengths/en/252311/relator-theme.aspx)
+   - Relationship Building domain
+   - I enjoy close relationships with others. I find deep satisfaction in working hard with friends to achieve a goal.
 
-## My Top 6-10 Strengths
-6. Command
-7. Activator
-8. Self-Assurance
-9. Responsibility
-10. Intellection
+### My Top 6-10 Strengths
 
-Here's my full report:
-[Bryan Dady CliftonStrengths 2018.pdf](Bryan_Dady_CliftonStrengths_2018.pdf)
+6. [Command](https://www.gallup.com/cliftonstrengths/en/252176/command-theme.aspx)
+7. [Activator](https://www.gallup.com/cliftonstrengths/en/252140/activator-theme.aspx)
+8. [Self-Assurance](https://www.gallup.com/cliftonstrengths/en/252332/self-assurance-theme.aspx)
+9. [Responsibility](https://www.gallup.com/cliftonstrengths/en/252320/responsibility-theme.aspx)
+10. [Intellection](https://www.gallup.com/cliftonstrengths/en/252284/intellection-theme.aspx)
+
+Here are my full reports:
+- [Bryan Dady CliftonStrengths 2018.pdf](Bryan_Dady_CliftonStrengths_2018.pdf)
+- [Bryan Dady 2020 CliftonStrengths.pdf](BryanDady_2020_StrengthsFinder.pdf)

@@ -168,7 +168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@algolia/client-search@npm:5.40.0, @algolia/client-search@npm:^5.40.0":
+"@algolia/client-search@npm:5.40.0":
   version: 5.40.0
   resolution: "@algolia/client-search@npm:5.40.0"
   dependencies:
@@ -4030,7 +4030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"algoliasearch@npm:^5.28.0, algoliasearch@npm:^5.37.0, algoliasearch@npm:^5.40.0":
+"algoliasearch@npm:^5.28.0, algoliasearch@npm:^5.37.0":
   version: 5.40.0
   resolution: "algoliasearch@npm:5.40.0"
   dependencies:
@@ -8868,7 +8868,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "my-website@workspace:."
   dependencies:
-    "@algolia/client-search": "npm:^5.40.0"
     "@docusaurus/core": "npm:^3.8.1"
     "@docusaurus/module-type-aliases": "npm:^3.8.1"
     "@docusaurus/preset-classic": "npm:^3.8.1"
@@ -8877,14 +8876,11 @@ __metadata:
     "@mdx-js/react": "npm:^3.1.1"
     "@types/node": "npm:^24.1.0"
     "@types/react": "npm:^19.1.9"
-    acorn: "npm:^8.15.0"
-    algoliasearch: "npm:^5.40.0"
     clsx: "npm:^2.1.1"
     prettier: "npm:^3.6.2"
     prism-react-renderer: "npm:^2.4.1"
     react: "npm:^19.1.1"
     react-dom: "npm:^19.1.1"
-    search-insights: "npm:^2.17.3"
     typescript: "npm:~5.8.3"
   languageName: unknown
   linkType: soft
@@ -11088,13 +11084,6 @@ __metadata:
     ajv-formats: "npm:^2.1.1"
     ajv-keywords: "npm:^5.1.0"
   checksum: 10/dba77a46ad7ff0c906f7f09a1a61109e6cb56388f15a68070b93c47a691f516c6a3eb454f81a8cceb0a0e55b87f8b05770a02bfb1f4e0a3143b5887488b2f900
-  languageName: node
-  linkType: hard
-
-"search-insights@npm:^2.17.3":
-  version: 2.17.3
-  resolution: "search-insights@npm:2.17.3"
-  checksum: 10/7f2d7c5d317d84bb9bb745f3e5cd411c206fb72e453331515712bda855e3ee8af4b767231a4bc25693eadd34e2ffd58b6eebb7c407fc17eeb2932cc997442dff
   languageName: node
   linkType: hard
 

@@ -1,3 +1,10 @@
+---
+title: dotfiles
+description: Personal dotfiles managed by chezmoi for consistent SRE environment setup.
+sidebar_position: 3
+tags: [dotfiles, chezmoi, shell, sre, configuration]
+---
+
 # dotfiles
 
 Personal dotfiles managed by chezmoi.

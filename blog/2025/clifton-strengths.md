@@ -20,4 +20,4 @@ By 2015, we had moved from western Washington to Missoula Montana. My employer h
 
 Here's what my CliftonStrengths assessment reveals about me:
 
-[Bryan Dady CliftonStrengths](https://bryandady.com/docs/reference/Bryan_Dady_CliftonStrengths)
+[Bryan Dady CliftonStrengths](https://bryandady.com/docs/reference/strengths)

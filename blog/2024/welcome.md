@@ -3,6 +3,7 @@ slug: welcome
 title: Welcome
 authors: [bcdady]
 tags: [hello, bryandady, docusaurus, 2024]
+date: 2024-02-12
 ---
 
 Welcome to my new site! I'm excited to share my thoughts and experiences with you. I hope you find something useful here.

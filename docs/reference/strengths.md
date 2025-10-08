@@ -1,3 +1,9 @@
+---
+title: CliftonStrengths
+description: My CliftonStrengths top themes and reports.
+tags: [strengths, assessment, career]
+---
+
 # CliftonStrengths
 
 \[My\] CliftonStrengths

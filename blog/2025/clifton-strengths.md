@@ -1,4 +1,10 @@
-# CliftonStrengths
+---
+slug: clifton-strengths
+title: CliftonStrengths
+authors: [bcdady]
+tags: [strengths, assessment, career, 2025]
+date: 2025-01-10
+---
 
 I first encountered Strength oriented personality and proficiency assessment, referred to at the time as StrengthsFinder, in 2011. I was pretty busy at the time, with 2 children under 2 years old and a full-time job (with a pretty long commute). I don't recall the details clearly, but I think my first access to the book was a second-hand copy. I purchased another copy of the StrengthsFinder 2.0 book, in 2015, so I could get my own access code to their online tools at [www.strengthsfinder.com](https://www.strengthsfinder.com).
 

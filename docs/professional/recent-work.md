@@ -1,4 +1,6 @@
 ---
+title: Recent Work
+description: Highlights of recent professional projects and contributions.
 sidebar_position: 1
 ---
 

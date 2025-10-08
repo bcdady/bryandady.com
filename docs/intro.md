@@ -1,4 +1,6 @@
 ---
+title: About Me
+description: Overview of Bryan Dady, strengths, interests, and links.
 sidebar_position: 1
 ---
 

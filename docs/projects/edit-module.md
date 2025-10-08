@@ -1,3 +1,10 @@
+---
+title: Edit-Module
+description: PowerShell module editor utility for convenient module development workflow.
+sidebar_position: 4
+tags: [powershell, modules, editor, development]
+---
+
 # Edit-Module
 
 PowerShell module editor utility.

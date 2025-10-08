@@ -1,3 +1,10 @@
+---
+title: tf-dns-cf
+description: Terraform module for managing DNS zones hosted by Cloudflare.
+sidebar_position: 8
+tags: [terraform, dns, cloudflare, infrastructure]
+---
+
 # tf-dns-cf
 
 Terraform module for managing DNS zones hosted by Cloudflare.

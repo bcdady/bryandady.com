@@ -1,3 +1,10 @@
+---
+title: Sperry
+description: PowerShell 'autopilot' module for network environment automation.
+sidebar_position: 6
+tags: [powershell, automation, network, environment]
+---
+
 # Sperry
 
 PowerShell 'autopilot' module for profile environment automation.

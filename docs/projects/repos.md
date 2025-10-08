@@ -1,3 +1,10 @@
+---
+title: repos
+description: GitHub repository configuration management with Terraform.
+sidebar_position: 5
+tags: [terraform, github, repository-management, infrastructure]
+---
+
 # repos
 
 Repository configuration management with Terraform.

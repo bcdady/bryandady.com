@@ -1,3 +1,11 @@
+---
+title: bryandady.com
+description: Personal website built with Docusaurus and deployed on Cloudflare Pages.
+sidebar_label: bryandady.com
+sidebar_position: 1
+tags: [typescript, react, docusaurus, cloudflare]
+---
+
 # bryandady.com
 
 Personal website built with modern web technologies.

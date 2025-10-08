@@ -1,3 +1,10 @@
+---
+title: cost-alerts
+description: Multi-cloud cost anomaly monitoring with Terraform for AWS, Azure, and GCP.
+sidebar_position: 2
+tags: [terraform, cost-monitoring, aws, azure, gcp, infrastructure]
+---
+
 # cost-alerts
 
 Multi-cloud cost monitoring setup using Terraform.

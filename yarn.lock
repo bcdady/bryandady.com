@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@ai-sdk/gateway@npm:1.0.33":
   version: 1.0.33

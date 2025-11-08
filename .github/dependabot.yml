@@ -7,3 +7,10 @@ updates:
     open-pull-requests-limit: 5
     reviewers:
       - 'bcdady'
+    groups:
+      minor-and-patch:
+        patterns:
+          - '*'
+        update-types:
+          - 'version-update:semver-minor'
+          - 'version-update:semver-patch'

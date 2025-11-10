@@ -8,7 +8,7 @@ on:
     - cron: '0 8 * * 1' # Weekly Monday 8am UTC
 
 jobs:
-  security:
+  yarn:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

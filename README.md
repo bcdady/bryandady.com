@@ -45,32 +45,50 @@ yarn deploy:safe
 
 This command verifies the build excludes development dependencies and is ready for production.
 
+### Versioning & Releases
+
+This project uses [Semantic Versioning](https://semver.org/) and automated releases via GitHub Actions.
+
+#### How It Works
+
+- **Automatic**: Every push to `main` triggers the release workflow
+- **Conventional Commits**: Commit messages determine the version bump:
+  - `feat:` or `feature:` → minor version bump (e.g., 1.0.0 → 1.1.0)
+  - `fix:` or other types → patch version bump (e.g., 1.0.0 → 1.0.1)
+  - `BREAKING CHANGE:` or `!:` → major version bump (e.g., 1.0.0 → 2.0.0)
+- **GitHub Releases**: Automatically created with changelog of commits
+
+#### Commit Message Examples
+
+```bash
+# Patch release (1.0.0 → 1.0.1)
+git commit -m "fix: resolve navigation bug"
+
+# Minor release (1.0.0 → 1.1.0)
+git commit -m "feat: add new blog post template"
+
+# Major release (1.0.0 → 2.0.0)
+git commit -m "feat!: redesign homepage layout"
+```
+
 ## Security
 
 ### webpack-dev-server Vulnerability Handling
 
-This project may show webpack-dev-server security warnings during `yarn audit` (or `npm audit`). These are **not security risks for the deployed site** because:
+This project includes webpack-dev-server as a transitive dependency (through Docusaurus). Security scanners may report vulnerabilities in webpack-dev-server. These are **not security risks for the deployed site** because:
 
-- **Development only**: webpack-dev-server is only used during `yarn start` and build processes
-- **Not deployed**: The production build contains only static HTML/CSS/JS files
-- **Verified exclusion**: Automated checks ensure no webpack-dev-server code reaches production
+- **Transitive dependency**: webpack-dev-server is pulled in by Docusaurus for development use only
+- **Development only**: Used only during local `yarn start` for hot-reloading
+- **Not deployed**: The production build at [bryandady.com](https://bryandady.com) contains only static HTML/CSS/JS files
+- **No runtime exposure**: The dev server never runs in production; Cloudflare Pages serves static assets only
 
-#### Verification
+#### Why This is Safe
 
-To verify webpack-dev-server is excluded from production builds:
+Webpack-dev-server vulnerabilities (e.g., GHSA-9jgg-88mc-972h, GHSA-4v9v-hfq4-rm2v) affect the development HTTP server that runs on `localhost` during development. Since this is a JAMstack site deployed as pre-built static files, these vulnerabilities have no attack surface in production.
 
-```shell
-yarn verify:no-webpack-dev-server
-```
-
-Or run the complete safety check:
-
-```shell
-yarn deploy:safe
-```
-
-#### Why This Approach
-
-The vulnerabilities (GHSA-9jgg-88mc-972h, GHSA-4v9v-hfq4-rm2v) affect the development server, not static site deployments. Since this is a JAMstack site deployed as static files, these vulnerabilities don't impact the production environment.
+The deployed site on Cloudflare Pages:
+- Contains zero Node.js code
+- Has no webpack or development server components
+- Serves only pre-compiled HTML, CSS, JavaScript, and assets
 
 For detailed security information, see [SECURITY.md](SECURITY.md).

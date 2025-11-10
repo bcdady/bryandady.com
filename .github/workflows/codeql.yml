@@ -24,8 +24,7 @@ jobs:
       matrix:
         include:
         - language: javascript-typescript
-          build-mode: command
-          command: yarn install && yarn build
+          build-mode: autobuild
     
     steps:
     - name: Checkout repository
@@ -35,9 +34,19 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        build-mode: ${{ matrix.build-mode }}
         # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
         queries: +security-and-quality
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'yarn'
+
+    - name: Install dependencies and build
+      run: |
+        yarn install
+        yarn build
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

@@ -4,9 +4,20 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+      day: 'thursday'
+      time: '22:00'
+      timezone: 'America/Los_Angeles'
     open-pull-requests-limit: 5
     reviewers:
       - 'bcdady'
+    versioning-strategy: increase
+    labels:
+      - 'dependencies'
+      - 'npm'
+    commit-message:
+      prefix: 'chore'
+      prefix-development: 'chore(dev)'
+      include: 'scope'
     groups:
       minor-and-patch:
         patterns:
@@ -14,3 +25,6 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
+        exclude-patterns:
+          - 'typescript'
+          - '@types/*'

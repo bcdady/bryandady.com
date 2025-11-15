@@ -2,25 +2,18 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 
 const config: Config = {
-  title: "Bryan Dady",
-  tagline: "Welcome",
-  favicon: "img/favicon.ico",
+  title: 'Bryan Dady',
+  tagline: 'Welcome',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: "https://bryandady.com",
+  url: 'https://bryandady.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "bcdady", // Usually your GitHub org/user name.
-  projectName: "bryandady.com", // Usually your repo name.
-
-  onBrokenLinks: "throw",
+  baseUrl: '/',
   markdown: {
     hooks: {
-      onBrokenMarkdownLinks: "warn",
+      onBrokenMarkdownLinks: 'throw',
     },
   },
 
@@ -28,118 +21,121 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   plugins: [
     [
-      "@docusaurus/plugin-content-docs",
+      '@docusaurus/plugin-content-docs',
       {
-        sidebarPath: "./sidebars.ts",
-        editUrl: "https://github.com/bcdady/bryandady.com/tree/main/",
+        sidebarPath: './sidebars.ts',
+        editUrl: 'https://github.com/bcdady/bryandady.com/tree/main/',
       },
     ],
     [
-      "@docusaurus/plugin-content-blog",
+      '@docusaurus/plugin-content-blog',
       {
         showReadingTime: true,
-        editUrl: "https://github.com/bcdady/bryandady.com/tree/main/",
+        editUrl: 'https://github.com/bcdady/bryandady.com/tree/main/',
+        feedOptions: {
+          type: null, // disables RSS/Atom/JSON feeds. See https://github.com/bcdady/bryandady.com/issues/50
+        },
       },
     ],
-    ["@docusaurus/plugin-content-pages", {}],
-    ["@docusaurus/plugin-sitemap", {}],
+    ['@docusaurus/plugin-content-pages', {}],
+    ['@docusaurus/plugin-sitemap', {}],
   ],
 
   themes: [
     [
-      "@docusaurus/theme-classic",
+      '@docusaurus/theme-classic',
       {
-        customCss: "./src/css/custom.css",
+        customCss: './src/css/custom.css',
       },
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: "Bryan Dady",
+      title: 'Bryan Dady',
       logo: {
         // Thank you https://www.vecteezy.com/
-        alt: "Laptop with code on screen",
-        src: "img/laptop.webp",
+        alt: 'Laptop with code on screen',
+        src: 'img/laptop.webp',
       },
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "Sidebar",
-          position: "left",
-          label: "Hello",
+          type: 'docSidebar',
+          sidebarId: 'Sidebar',
+          position: 'left',
+          label: 'Hello',
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: "https://github.com/bcdady",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/bcdady',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "Hello",
-              to: "/docs/intro",
+              label: 'Hello',
+              to: '/docs/intro',
             },
             {
-              label: "Résumé",
-              to: "/resume",
+              label: 'Résumé',
+              to: '/resume',
             },
           ],
         },
         {
-          title: "Social",
+          title: 'Social',
           items: [
             {
-              label: "LinkedIn",
-              href: "https://linkedin.com/in/bryandady",
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/bryandady',
             },
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/users/1709178/bcdady",
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/users/1709178/bcdady',
             },
             {
-              label: "Discord",
-              href: "https://discord.com/channels/@bcdady",
+              label: 'Discord',
+              href: 'https://discord.com/channels/@bcdady',
             },
             {
-              label: "Threads",
-              href: "https://threads.net/@bcdady",
+              label: 'Threads',
+              href: 'https://threads.net/@bcdady',
             },
             {
-              label: "BlueSky",
-              href: "https://bsky.app/profile/bcdady.bsky.social"
-            }
+              label: 'BlueSky',
+              href: 'https://bsky.app/profile/bcdady.bsky.social',
+            },
           ],
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: "About Me",
-              to: "https://about.me/bryandady",
+              label: 'About Me',
+              to: 'https://about.me/bryandady',
             },
             {
-              label: "GitHub",
-              href: "https://github.com/bcdady",
+              label: 'GitHub',
+              href: 'https://github.com/bcdady',
             },
           ],
         },
@@ -150,7 +146,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-      },
+  },
 };
 
 export default config;

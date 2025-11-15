@@ -9,8 +9,28 @@ on:
     - cron: '30 1 * * 1'  # Weekly on Mondays at 1:30 AM UTC
 
 jobs:
+  yarn:
+    name: Check package.json and yarn.lock consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'yarn'
+
+      # Verify lockfile is up-to-date
+      - name: Check yarn.lock consistency
+        run: |
+          echo "Running immutable install to verify yarn.lock..."
+          if ! yarn install --immutable; then
+            echo "::error::yarn.lock is out of sync with package.json. Run 'yarn install' locally and commit the updated yarn.lock"
+            exit 1
+          fi
+
   analyze:
     name: Analyze Code
+    needs: yarn
     runs-on: ubuntu-latest
     timeout-minutes: 360
     permissions:
@@ -20,7 +40,7 @@ jobs:
       contents: read
 
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         include:
         - language: javascript-typescript
@@ -28,10 +48,10 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
+      uses: github/codeql-action/init@v4
       with:
         languages: ${{ matrix.language }}
         # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
@@ -43,13 +63,14 @@ jobs:
         node-version: '22'
         cache: 'yarn'
 
-    - name: Install dependencies and build
-      run: |
-        yarn install
-        yarn build
+    - name: yarn install
+      run: yarn install
+
+    - name: Type check
+      run: yarn typecheck
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+      uses: github/codeql-action/analyze@v4
       with:
         category: "/language:${{matrix.language}}"
         upload: true

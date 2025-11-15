@@ -28,6 +28,10 @@ jobs:
             exit 1
           fi
 
+      # Run typecheck to catch type errors early
+      - name: Type check
+        run: yarn typecheck
+
   analyze:
     name: Analyze Code
     needs: yarn
@@ -63,11 +67,8 @@ jobs:
         node-version: '22'
         cache: 'yarn'
 
-    - name: yarn install
-      run: yarn install
-
-    - name: Type check
-      run: yarn typecheck
+    - name: Install dependencies
+      run: yarn install --immutable
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4

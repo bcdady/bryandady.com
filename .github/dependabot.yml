@@ -19,6 +19,12 @@ updates:
       prefix-development: 'chore(dev)'
       include: 'scope'
     groups:
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
       minor-and-patch:
         patterns:
           - '*'

@@ -43,6 +43,8 @@ This project shares patterns with `ride-more-org`:
 
 ## Development Constraints & Conventions
 
+- **Surgical Commits**: Only commit files directly related to the current task. Do not bundle pre-existing untracked files or unrelated modifications without explicit permission.
+- **Branching Strategy**: Use feature/draft branches for new features, scripts, or content. Direct commits to `main` should be reserved for minor configuration or documentation fixes.
 - **Blog Posts**:
   - Use `<!-- truncate -->` in blog posts to control post previews.
 - **Git Tracking**: Ensure new blog files are added to Git to allow Docusaurus to retrieve file history for "edit this page" and last-update metadata.

@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: jdx/mise-action@v2
+      - uses: jdx/mise-action@v4
 
       # Verify lockfile is up-to-date
       - name: Check aube.lock consistency
         run: |
           echo "Running frozen install to verify aube.lock..."
-          aube install --frozen
+          aube install --frozen-lockfile
 
       # Run security audit
       - name: Aube security audit

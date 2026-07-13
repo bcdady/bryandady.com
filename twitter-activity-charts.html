@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Dady's Twitter Activity Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1DA1F2;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            margin: 40px 0;
+            height: 400px;
+        }
+        .stats {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .stats h3 {
+            margin-top: 0;
+            color: #1DA1F2;
+        }
+        .stat-item {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .highlight {
+            color: #1DA1F2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Bryan Dady's Twitter Activity (2009-2023)</h1>
+        
+        <div class="stats">
+            <h3>📈 Key Statistics</h3>
+            <div class="stat-item">• Total Tweets: <span class="highlight">7,133</span></div>
+            <div class="stat-item">• Peak Year: <span class="highlight">2015 (1,082 tweets)</span></div>
+            <div class="stat-item">• Peak Month: <span class="highlight">2010-08 (163 tweets)</span></div>
+            <div class="stat-item">• Active Years: <span class="highlight">15</span></div>
+        </div>
+        
+        <h2>📅 Tweets by Year</h2>
+        <div class="chart-container">
+            <canvas id="yearlyChart"></canvas>
+        </div>
+        
+        <h2>📊 Monthly Activity Timeline</h2>
+        <div class="chart-container">
+            <canvas id="monthlyChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Yearly Chart
+        const yearlyCtx = document.getElementById('yearlyChart').getContext('2d');
+        new Chart(yearlyCtx, {
+            type: 'bar',
+            data: {
+                labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+                datasets: [{
+                    label: 'Tweets',
+                    data: [286, 934, 622, 459, 386, 291, 1082, 1027, 565, 349, 309, 380, 243, 191, 9],
+                    backgroundColor: '#1DA1F2',
+                    borderColor: '#1DA1F2',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Annual Twitter Activity'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Number of Tweets'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Monthly Chart
+        const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+        new Chart(monthlyCtx, {
+            type: 'line',
+            data: {
+                labels: ['2009-05', '2009-06', '2009-07', '2009-08', '2009-09', '2009-10', '2009-11', '2009-12', '2010-01', '2010-02', '2010-03', '2010-04', '2010-05', '2010-06', '2010-07', '2010-08', '2010-09', '2010-10', '2010-11', '2010-12', '2011-01', '2011-02', '2011-03', '2011-04', '2011-05', '2011-06', '2011-07', '2011-08', '2011-09', '2011-10', '2011-11', '2011-12', '2012-01', '2012-02', '2012-03', '2012-04', '2012-05', '2012-06', '2012-07', '2012-08', '2012-09', '2012-10', '2012-11', '2012-12', '2013-01', '2013-02', '2013-03', '2013-04', '2013-05', '2013-06', '2013-07', '2013-08', '2013-09', '2013-10', '2013-11', '2013-12', '2014-01', '2014-02', '2014-03', '2014-04', '2014-05', '2014-06', '2014-07', '2014-08', '2014-09', '2014-10', '2014-11', '2014-12', '2015-01', '2015-02', '2015-03', '2015-04', '2015-05', '2015-06', '2015-07', '2015-08', '2015-09', '2015-10', '2015-11', '2015-12', '2016-01', '2016-02', '2016-03', '2016-04', '2016-05', '2016-06', '2016-07', '2016-08', '2016-09', '2016-10', '2016-11', '2016-12', '2017-01', '2017-02', '2017-03', '2017-04', '2017-05', '2017-06', '2017-07', '2017-08', '2017-09', '2017-10', '2017-11', '2017-12', '2018-01', '2018-02', '2018-03', '2018-04', '2018-05', '2018-06', '2018-07', '2018-08', '2018-09', '2018-10', '2018-11', '2018-12', '2019-01', '2019-02', '2019-03', '2019-04', '2019-05', '2019-06', '2019-07', '2019-08', '2019-09', '2019-10', '2019-11', '2019-12', '2020-01', '2020-02', '2020-03', '2020-04', '2020-05', '2020-06', '2020-07', '2020-08', '2020-09', '2020-10', '2020-11', '2020-12', '2021-01', '2021-02', '2021-03', '2021-04', '2021-05', '2021-06', '2021-07', '2021-08', '2021-09', '2021-10', '2021-11', '2021-12', '2022-01', '2022-02', '2022-03', '2022-04', '2022-05', '2022-06', '2022-07', '2022-08', '2022-09', '2022-10', '2022-11', '2022-12', '2023-01', '2023-03', '2023-04', '2023-06', '2023-07'],
+                datasets: [{
+                    label: 'Tweets',
+                    data: [16, 37, 25, 36, 46, 68, 43, 15, 29, 34, 46, 107, 80, 75, 76, 163, 70, 71, 86, 97, 79, 59, 49, 47, 30, 41, 64, 42, 72, 42, 36, 61, 44, 9, 12, 26, 29, 24, 33, 74, 86, 35, 36, 51, 37, 34, 50, 46, 61, 48, 21, 23, 18, 11, 23, 14, 18, 19, 16, 39, 23, 24, 26, 42, 17, 22, 12, 33, 100, 110, 79, 108, 134, 55, 71, 56, 85, 142, 84, 58, 84, 85, 96, 101, 71, 73, 56, 79, 102, 98, 116, 66, 45, 70, 84, 71, 101, 61, 21, 25, 31, 23, 19, 14, 30, 28, 31, 34, 21, 30, 39, 53, 33, 18, 11, 21, 30, 17, 26, 15, 12, 17, 51, 44, 27, 18, 30, 22, 29, 40, 76, 42, 54, 26, 28, 13, 14, 16, 24, 18, 15, 5, 12, 12, 24, 21, 40, 23, 35, 19, 22, 15, 8, 10, 25, 11, 13, 10, 24, 15, 13, 21, 33, 8, 1, 3, 1, 3, 1],
+                    borderColor: '#1DA1F2',
+                    backgroundColor: 'rgba(29, 161, 242, 0.1)',
+                    fill: true,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Monthly Twitter Activity Over Time'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Number of Tweets'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Month'
+                        },
+                        ticks: {
+                            maxTicksLimit: 20
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

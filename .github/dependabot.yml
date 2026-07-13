@@ -1,36 +1,71 @@
 version: 2
 updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
+  # Enable version updates for npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: 'weekly'
-      day: 'thursday'
-      time: '22:00'
-      timezone: 'America/Los_Angeles'
+      interval: "weekly"
+      day: "monday"
+      time: "10:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "bcdady"
+    assignees:
+      - "bcdady"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "automated"
+    # Group minor and patch updates together to reduce PR noise
+    groups:
+      production-dependencies:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "@types/*"
+          - "*eslint*"
+          - "*prettier*"
+          - "*jest*"
+          - "*test*"
+      development-dependencies:
+        patterns:
+          - "@types/*"
+          - "*eslint*" 
+          - "*prettier*"
+          - "*jest*"
+          - "*test*"
+    # Security updates get higher priority
+    allow:
+      - dependency-type: "direct"
+      - dependency-type: "indirect"
+    ignore:
+      # Ignore major version updates for stable dependencies
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@docusaurus/*"
+        update-types: ["version-update:semver-major"]
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "10:30"
+      timezone: "UTC"
     open-pull-requests-limit: 5
     reviewers:
-      - 'bcdady'
-    versioning-strategy: increase
-    labels:
-      - 'dependencies'
-      - 'npm'
+      - "bcdady"
+    assignees:
+      - "bcdady"
     commit-message:
-      prefix: 'chore'
-      prefix-development: 'chore(dev)'
-      include: 'scope'
-    groups:
-      react:
-        patterns:
-          - 'react'
-          - 'react-dom'
-          - '@types/react'
-          - '@types/react-dom'
-      minor-and-patch:
-        patterns:
-          - '*'
-        update-types:
-          - 'minor'
-          - 'patch'
-        exclude-patterns:
-          - 'typescript'
-          - '@types/*'
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "github-actions"
+      - "automated"

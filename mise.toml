@@ -1,0 +1,6 @@
+[tools]
+node = "22"
+aube = "latest"
+
+[settings]
+experimental = true # aube may require experimental features in mise

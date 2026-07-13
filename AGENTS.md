@@ -4,11 +4,13 @@ This file provides high-signal context for agents working on the `bryandady.com`
 
 ## Build and Development
 
-- **Package Manager**: Yarn 4 (Berry). Use `yarn` commands.
-- **Development Server**: `yarn start`
-- **Production Build**: `yarn build`. 
-  - Note: `prebuild` automatically runs `yarn resume:meta`.
-- **Type Checking**: `yarn typecheck` (runs `tsc`).
+- **Package Manager**: [aube](https://aube.jdx.dev/). Use `aube` commands.
+- **Tool Version Manager**: [mise](https://mise.jdx.dev/). Managed via `mise.toml`.
+- **Development Server**: `aube run start` (or `npm run start` / `yarn start` via aube's compatibility layer).
+- **Production Build**: `aube run build`. 
+  - Note: `prebuild` automatically runs `aube run resume:meta`.
+- **Type Checking**: `aube run typecheck` (runs `tsc`).
+- **Security Audit**: `aube audit`.
 
 ## Project Structure
 
@@ -35,7 +37,7 @@ This project shares patterns with `ride-more-org`:
 - **Broken Links**: 
   - `onBrokenLinks` and `onBrokenMarkdownLinks` are both set to `'throw'` in `docusaurus.config.ts`. Every link must be valid for the build to pass.
 - **Docusaurus v4**: Both use `future: { v4: true }` in `docusaurus.config.ts` to prepare for the next major version.
-- **Yarn Berry**: Uses Yarn 4 with `.yarnrc.yml` and `.yarn/` directory.
+- **Modern Tooling**: Moving towards standardizing on `mise` for tool management and `aube` for package management.
 -->
 <!-- AGENT_SYNC_END: shared-docusaurus-patterns -->
 

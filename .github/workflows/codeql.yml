@@ -14,35 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Enable Corepack
-        run: corepack enable
-
-      - name: Cache Yarn dependencies
-        uses: actions/cache@v5
-        with:
-          path: |
-            .yarn/cache
-            .yarn/unplugged
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
+      - uses: jdx/mise-action@v2
 
       # Verify lockfile is up-to-date
-      - name: Check yarn.lock consistency
+      - name: Check aube.lock consistency
         run: |
-          echo "Running immutable install to verify yarn.lock..."
-          if ! yarn install --immutable; then
-            echo "::error::yarn.lock is out of sync with package.json. Run 'yarn install' locally and commit the updated yarn.lock"
-            exit 1
-          fi
+          echo "Running frozen install to verify aube.lock..."
+          aube install --frozen
+
+      # Run security audit
+      - name: Aube security audit
+        run: aube audit
 
       # Run typecheck to catch type errors early
       - name: Type check
-        run: yarn typecheck
+        run: aube run typecheck
 
   analyze:
     name: Analyze Code

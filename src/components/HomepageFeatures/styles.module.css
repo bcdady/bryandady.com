@@ -5,7 +5,25 @@
   width: 100%;
 }
 
-.featureSvg {
+.features a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.features a:hover {
+  color: var(--ifm-color-primary);
+}
+
+.featureImg {
   height: 200px;
   width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.featureImg:hover {
+  transform: scale(1.05);
 }

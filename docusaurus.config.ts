@@ -5,12 +5,16 @@ const config: Config = {
   title: 'Bryan Dady',
   tagline: 'Welcome',
   favicon: 'img/favicon.ico',
+  future: {
+    v4: true,
+  },
 
   // Set the production url of your site here
   url: 'https://bryandady.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  onBrokenLinks: 'throw',
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'throw',

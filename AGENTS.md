@@ -43,6 +43,7 @@ This project shares patterns with `ride-more-org`:
 
 ## Development Constraints & Conventions
 
+- **Connectivity**: VPN reconnection uses SAML and will open a browser tab for authentication. If a network-dependent command (like `aube install` or `gh` commands) hangs unexpectedly, verify the VPN status and check for open browser tabs.
 - **Surgical Commits**: Only commit files directly related to the current task. Do not bundle pre-existing untracked files or unrelated modifications without explicit permission.
 - **Branching Strategy**: Use feature/draft branches for new features, scripts, or content. Direct commits to `main` should be reserved for minor configuration or documentation fixes.
 - **Blog Posts**:

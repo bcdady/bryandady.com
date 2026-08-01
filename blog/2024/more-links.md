@@ -14,4 +14,4 @@ For my other online links, see:
 
 [about.me/bryandady](https://about.me/bryandady)
 
-<!-- truncate -->
+{/* truncate */}

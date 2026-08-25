@@ -4,7 +4,8 @@ This file provides high-signal context for agents working on the `bryandady.com`
 
 ## Build and Development
 
-- **Package Manager**: [aube](https://aube.jdx.dev/). Use `aube` commands.
+- **Package Manager**: [pnpm](https://pnpm.io/). Use `pnpm` commands. `aube` remains available for high-performance local task execution via `aube run`.
+- **Cloudflare Pages Build**: Configured to use `pnpm install --frozen-lockfile` and `pnpm run build`. GitHub Workflows are unified on `pnpm` for consistency.
 - **Tool Version Manager**: [mise](https://mise.jdx.dev/). Managed via `mise.toml`.
 - **Development Server**: `aube run start` (or `npm run start` / `yarn start` via aube's compatibility layer).
 - **Production Build**: `aube run build`. 

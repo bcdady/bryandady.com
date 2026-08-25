@@ -55,7 +55,7 @@
   "engines": {
     "node": ">=22.0"
   },
-  "packageManager": "aube@1.26.0",
+  "packageManager": "pnpm@10.5.2",
   "pnpm": {
     "overrides": {
       "serialize-javascript": "^7.0.5",

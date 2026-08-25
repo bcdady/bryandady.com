@@ -14,21 +14,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v4
       - uses: jdx/mise-action@v4
 
       # Verify lockfile is up-to-date
-      - name: Check aube.lock consistency
+      - name: Check pnpm-lock.yaml consistency
         run: |
-          echo "Running frozen install to verify aube.lock..."
-          aube install --frozen-lockfile
+          echo "Running frozen install to verify pnpm-lock.yaml..."
+          pnpm install --frozen-lockfile
 
       # Run security audit
-      - name: Aube security audit
-        run: aube audit
+      - name: pnpm security audit
+        run: pnpm audit
 
       # Run typecheck to catch type errors early
       - name: Type check
-        run: aube run typecheck
+        run: pnpm run typecheck
 
   analyze:
     name: Analyze Code
